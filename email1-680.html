@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="x-apple-disable-message-reformatting">
+	<title>3D Rendering & Animation</title>
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+	
+	<!--[if (mso)|(mso 16)]>
+	<style type="text/css">
+	a {text-decoration: none;}
+	</style>
+	<![endif]-->	
+	<style>
+		table, td, div, h1, p {font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+		td{font-size: 0;}
+		img {border: 0; outline: none; line-height: 100%; text-decoration: none; -ms-interpolation-mode: bicubic;}
+	</style>
+	<style type="text/css">
+		html,body {margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;background: #f1f1f1;letter-spacing: 0.8px;}
+		* {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+		div[style*="margin: 16px 0"] {margin: 0 !important;}
+		td {mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;}
+		table {border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;}		
+		img {-ms-interpolation-mode:bicubic;}
+		a {text-decoration: none;}
+		*[x-apple-data-detectors], /* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}	
+		.a6S { display: none !important;opacity: 0.01 !important;}
+		.im {color: inherit !important;}
+		img.g-img + div { display: none !important;}
+		p{margin: 0px; padding: 0px;}
+	</style>
+	<style type="text/css">
+		@media screen {
+			@font-face {
+			  font-family: 'Inter';
+			  font-style: normal;
+			  font-weight: 400;
+			  font-display: swap;
+			  src: local('Inter'),url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			@font-face {
+			  font-family: 'Inter';
+			  font-style: normal;
+			  font-weight: 600;
+			  font-display: swap;
+			  src: local('Inter'),url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hiA.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			} 
+		}
+	</style>
+	<style>
+		table, td, div, h1, p {font-family: 'Inter',sans-serif; font-weight: 600;}
+		p{font-size: 14px;color:#F5F5F7;line-height: 1.4;}
+		a{text-decoration: none; color: #ffff00 !important;}
+		.p-t-8{padding-top: 8px;}
+		.p-t-4{padding-top: 4px;}
+		.w-216{width: 216px;}
+		.logo{width: 124px; height: auto;}
+		.logo-btm{width: 55%;}
+		.zoom{width: 48px; height: 48px;}
+		.h-16{height: 16px;}
+	</style>
+	<style>
+		@media only screen and (min-device-width: 320px) and (max-device-width: 428px) {
+			a{text-decoration: none; color: #ffff00 !important;}
+			p{font-size: 11px;color:#FFFFFF; line-height: 1.4; font-weight: 400;}
+			.w-216{width: 130px;}
+			.p-t-8{padding-top: 4px;}
+			.logo{width: 78px; height: auto;}
+			.logo-btm{width: 55%;}
+			.zoom{width: 36px; height: 36px;}
+			.h-16{height: 8px;}
+		}		
+	</style>
+</head>
+<body style="width: 100% !important; margin: 0; padding: 0; mso-line-height-rule: exactly; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #F5F5F7;">
+	<table class="pc-email-body" role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#F5F5F7">
+		<tr>	
+			<td valign="top" align="center">
+				<!--[if gte mso 9]>
+					<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+					<v:fill type="tile" src="" color="#F5F5F7"/>
+					</v:background>
+				<![endif]-->
+				<!--[if (gte mso 9)|(IE)]><table width="680" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" bgcolor="#000000"><tr><td width="680" align="center" valign="top"><![endif]-->
+				<table class="pc-email-container" role="presentation" style="margin: 0 auto; max-width: 680px;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#000000">
+					<tr>
+						<td style="padding: 12px;" valign="top" align="left">
+							<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="left" valign="top">
+													<p class="p-t-8">
+														Hello {{ contact.FIRSTNAME }}
+													</p>
+													<p class="p-t-8">
+														I’m wondering if you have ever worked with 3D graphic artists & experienced challenges finding & hiring quality rendering services.
+													</p>
+													<p class="p-t-8">
+														Some things we offer are stunning 3d still photo like images, animations and 360 virtual walk-through tours?
+													</p>										
+													<p class="p-t-8">
+														Call if you have questions or send an e mail or set up a Zoom meeting.
+													</p>
+													<p class="p-t-8">
+														We are responsive and responsible.
+													</p>													
+												</td>
+											</tr>
+											<tr height="8" bgcolor="#000000">
+												<td></td>
+											</tr>
+											<tr>
+												<td align="left" valign="top">
+													<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="left" valign="top" class="w-216">
+																<img src="https://3drenderservice.com/wp-content/uploads/2023/10/email-one-contact.png" alt="contact" style="display: block; width: 100%;">
+															</td>
+															<td  align="left" valign="top">
+																<img class="logo" src="https://3drenderservice.com/wp-content/uploads/2023/10/logo.gif" alt="3D-logo" style="display: block;">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr bgcolor="#000000" height="12">
+												<td></td>
+											</tr>
+											<tr>
+												<td align="center" valign="top">
+													<img src="https://3drenderservice.com/wp-content/uploads/2023/10/Email-1-Pic-1.jpg" alt="Banner" style="display: block; width: 100%;">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top">
+													<p class="p-t-8">Clickable link to my website below</p>
+													<p ><a href="https://3drenderservice.com">https://3drenderservice.com</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="top">
+													<img src="https://3drenderservice.com/wp-content/uploads/2023/10/Email-1-Pic-2-1.jpg" alt="Banner" style="display: block; width: 100%;">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tr height="8" bgcolor="#000000">
+									<td></td>
+								</tr>
+							</table>
+							<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" valign="middle">
+													<table role="presentation" style="table-layout: fixed;" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="left" valign="top">
+																<p style="color: #F5F5F7;">Click <a href="https://calendly.com/3d-render-service/craig" style="color: #F5F5F7 !important;">here</a> to schedule a Zoom Meeting</p>
+															</td>
+															<td align="left" valign="top">
+																<a href="https://calendly.com/3d-render-service/craig">
+																	<img src="https://3drenderservice.com/wp-content/uploads/2023/10/zoom-logo.png" alt="zoom-logo" class="zoom">
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>	
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td width="" align="center" valign="top">
+													<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+														<tr>
+															<td align="center" valign="top">
+																<p>Thanks Craig</p>
+																<p class="p-t-4"><a href="tel:8888738977"><span>888-873-8977</span></a></p>
+																<p class="p-t-4"><a href="mailto:craig@3drenderservice.com"><span>craig@3drenderservice.com</span></a></p>
+																<p class="p-t-4"><a href="https://3drenderservice.com"><span>https://3drenderservice.com</span></a></p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr height="8">
+									<td></td>
+								</tr>								
+								<tr>
+									<td align="center" valign="top">
+										<table role="presentation" style="table-layout: fixed;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td align="center" width="30%" valign="bottom">
+													<p><a href="https://3drenderservice.com/#subscribe"><img src="https://3drenderservice.com/wp-content/uploads/2023/10/Subscribe.png" alt="subscribe" style="display: block; width: 75%;"></a></p>
+												</td>
+												<td align="center" width="40%" valign="top">
+													<p><img src="https://3drenderservice.com/wp-content/uploads/2023/10/rendered-3d-logo.png" alt="logo" class="logo-btm" style="display: block;"></p>
+												</td>
+												<td align="center" width="30%" valign="bottom">
+													<p style="padding-bottom: 10px;"><a href="https://3drenderservice.com/email-one"><img src="https://3drenderservice.com/wp-content/uploads/2023/10/Share.png" alt="share" style="display: block; width: 75%;"></a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+			</td>
+		</tr>
+	</table>
+</body>
+</html>	
